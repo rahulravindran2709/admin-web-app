@@ -1,0 +1,6 @@
+[submodule "admin-client"]
+	path = admin-client
+	url = https://github.com/rahulravindran2709/admin-client.git
+[submodule "admin-nginx"]
+	path = admin-nginx
+	url = https://github.com/rahulravindran2709/nginx-docker

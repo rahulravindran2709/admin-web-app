@@ -1,0 +1,16 @@
+version : '2'
+services :
+  admin-client:
+    build: ./admin-client
+    container_name: admin-client-container
+    volumes: 
+    - ./admin-client:/tmp/cache
+    - static:/static
+  admin-nginx:
+    container_name: admin-nginx-container
+    build: ./admin-nginx 
+    volumes:
+    - static:/static
+volumes:
+  static:
+    driver: local
