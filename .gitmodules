@@ -4,3 +4,6 @@
 [submodule "admin-nginx"]
 	path = admin-nginx
 	url = https://github.com/rahulravindran2709/nginx-docker
+[submodule "admin-server"]
+	path = admin-server
+	url = https://github.com/rahulravindran2709/admin-server.git
