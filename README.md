@@ -26,14 +26,21 @@ https://gist.github.com/dweinstein/9550188
  Now webpack is run and the bundle files are generated. The output directory is then shared to a mounted volume /static. This /static is used by the other container to read and serve the static files 	
 
 ##admin-nginx
-Docker image is inherited from official nginx docker image. Simply copies over the nginx configuration to the container and starts the server at the specified http port. This image uses the mounted volume which has the build files from the other container
+Docker image is inherited from official nginx docker image.  
+https://hub.docker.com/_/nginx/  
+Simply copies over the nginx configuration to the container and starts the server at the specified http port. This image uses the mounted volume which has the build files from the other container
 
 
 #Requirements
 Docker  
 Tested on docker v1.13.0
+
 #Installation
-Just clone repository and run the below commande
+-Just clone repository 
+-Fetch the respective git submodules
+-Run the below command at the base folder where docker-compose.yaml exists
+	docker-compose up -d
+	
 #References
 http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 
