@@ -36,11 +36,11 @@ Docker
 Tested on docker v1.13.0
 
 #Installation
--Just clone repository 
--Fetch the respective git submodules
--Run the below command at the base folder where docker-compose.yaml exists
-	docker-compose up -d
-	
+- Just clone repository 
+- Fetch the respective git submodules
+- Run the below command at the base folder where docker-compose.yaml exists  
+		docker-compose up -d
+
 #References
 http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 
