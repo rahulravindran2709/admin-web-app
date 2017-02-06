@@ -13,6 +13,13 @@ services :
     - static:/static
     ports:
     - "8080:8080"
+  admin-server:
+    container_name: admin-server-container
+    build: ./admin-server
+    volumes:
+      - ./admin-server:/adminapp
+    ports:
+    - "3000:3000"
 volumes:
   static:
     driver: local
